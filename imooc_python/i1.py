@@ -1,4 +1,7 @@
 '''
+课程网址：https://class.imooc.com/sc/71/learn
+学习时间：20191021 
+
 2-5 简单判断
 '''
 
