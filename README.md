@@ -16,7 +16,13 @@
 
 >选自：[it行业过来人建议](https://www.huxiu.com/article/322428.html)
 
+## October
+
+github->python
+
 ### September
+
 [《Mysql必知必会》](https://book.douban.com/subject/3354490/) 纸质书   ~~基本掌握~~
 
 [MySQL实战45讲](https://time.geekbang.org/column/intro/139)  极客时间在线音频  未掌握，有困难
+
