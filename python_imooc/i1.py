@@ -34,7 +34,10 @@ else:
     print(n,"不是1个水仙花数字")
 
 '''
-3-3 列表
+3-2 列表
+    和php中数组极度相似。
+    正向索引，反向索引。
+    思考：php中相关用法。 php中数组没有反向索引
 '''
 mingzhu = ["春秋","战国","左传","史记","汉书","三国志","隋唐","五代","十国","元明"]
 
@@ -46,8 +49,28 @@ print(mingzhu)
 #插入  注意：不是[],是()
 mingzhu.insert(2,"左传前")
 print(mingzhu)
-mingzhu.insert(-1,"中华")  #为什么显示在倒数第二而不是倒数第一？
+mingzhu.insert(-1,"中华")  #为什么显示在倒数第二而不是倒数第一？  左边是起始，右边是中止处不显示
 print(mingzhu)
 #删除
 mingzhu.pop(-1)
 print(mingzhu)
+#范围显示
+print(mingzhu[1:2]) #从1开始，不显示2
+print(mingzhu[::]) #显示all
+
+'''
+3-3 字典 
+    和php中对象极度相似
+    key-value
+'''
+dan = {"name":"dan","age":"22","height":"165","size":"38","sex":"female"}
+#更新数值 
+##如不存在，视为新增
+print(dan["age"])
+print(dan)
+dan["son"] = "yunxi"  #不存在
+print(dan)
+
+#删除数据
+dan.pop("son")  #字典是根据key键，列表是根据索引
+print(dan)
