@@ -26,3 +26,5 @@ github->python
 
 [MySQL实战45讲](https://time.geekbang.org/column/intro/139)  极客时间在线音频  未掌握，有困难
 
+2019
+
