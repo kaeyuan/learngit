@@ -99,3 +99,97 @@ stud.append(stud2)
 print(stud)
 
 print("name-"+stud[-1]["name"],"\nage-"+stud[-1]["age"])
+
+
+'''
+4-1 while循环
+    不定次循环
+'''
+wh1 = 0
+while wh1 < 4 :
+    print(wh1*100)
+    wh1 = wh1 + 1  #wh1 += 1也可以用；但是 wh1++是不行的
+print ("while End")
+
+### 课堂练习
+i = 1
+j = 3
+while i <=10 :
+    print (j)  #i=1,j=3;
+    j = j * 3
+    i = i + 1
+
+### 编程测试 
+sum1 = 0 #所有奇数的和
+num1 = 1 #奇数
+#循环条件
+while num1 < 1000 :
+    #判断条件
+    if num1%2 != 0 :
+        # 求和
+        sum1 = sum1 + num1
+    num1 = num1 + 1  #不能写到if内，不是奇数就不加了？死循环
+#打印最终sum1 值        
+print(sum1)  #25000
+
+'''
+4-2 for循环
+    定次循环
+'''
+mingzhus = ["春秋","战国","左传","史记","汉书","三国志","隋唐","五代","十国","元明"]
+for book in mingzhus :
+    if book != "三国志" :
+        print(book)
+
+# range 左闭右开
+for i in range(10,20):
+    print(i)
+
+#寻找所有的水仙花数字,3位数
+## for循环
+for n in range(100,1000):  #此处n，与外部无冲突
+    #根据之前课程所学，水仙花的盘点条件
+    n1 = int(n/100)
+    n2 = int(n/10%10)
+    n3 = n%10
+    result = n1*n1*n1+n2*n2*n2+n3*n3*n3
+    #循环内的数字遍历，符合条件的打印
+    if n == result :
+        print(n,"是1个水仙花数字")
+
+## while循环
+n = 100
+while n < 1000 :    #变化
+    
+    n1 = int(n/100)
+    n2 = int(n/10%10)
+    n3 = n%10
+    result = n1*n1*n1+n2*n2*n2+n3*n3*n3
+    
+    if n == result :
+        print(n,"是1个水仙花数字")
+    n=n+1   #变化
+
+'''
+4-3 嵌套循环
+'''
+col1 = ["春秋","战国","左传","史记","汉书"]
+col2 = ["唐朝","宋朝","元朝","明朝","清朝"]
+col3 = ["唐诗","宋词","元曲","八股","白话"]
+row= [col1,col2,col3]
+for i in row :
+    for j in i :
+        print(j+"-",end="")
+    print(end="\n")
+
+# 测试
+for i in range(1):
+    #打印0 
+    for j in range(3):
+        print('*',end='')
+'''参考解析：
+本题考察的是对for循环嵌套的应用。range() 函数用于创建一个整数列表，为左闭右开，i的值为0；j的值为0、1、2。内层循环的print中有end=""，星号会在一行显示，输出结果为一行三列的星号。因此A选项正确。'''
+
+'''
+4-4 科幻编年史
+'''
